@@ -1,0 +1,7 @@
+{
+  "1001": {"customer_id": "C-100", "item": "Running Shoes", "price": 85, "status": "delivered", "days_since_delivery": 10, "tracking": "QS-55501", "arrives": "already delivered"},
+  "1002": {"customer_id": "C-100", "item": "Wireless Headphones", "price": 150, "status": "shipped", "days_since_delivery": 0, "tracking": "SP-77812", "arrives": "in 2 days"},
+  "1003": {"customer_id": "C-100", "item": "Smart Watch", "price": 220, "status": "delivered", "days_since_delivery": 5, "tracking": "QS-55777", "arrives": "already delivered"},
+  "1004": {"customer_id": "C-200", "item": "Phone Case", "price": 15, "status": "delivered", "days_since_delivery": 45, "tracking": "SP-11223", "arrives": "already delivered"},
+  "1005": {"customer_id": "C-200", "item": "Laptop Bag", "price": 60, "status": "processing", "days_since_delivery": 0, "tracking": "not shipped yet", "arrives": "ships tomorrow"}
+}

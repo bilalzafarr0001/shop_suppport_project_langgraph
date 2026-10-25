@@ -1,0 +1,8 @@
+langgraph
+langchain
+langchain-groq
+langchain-text-splitters
+langchain-mcp-adapters
+mcp
+numpy
+python-dotenv

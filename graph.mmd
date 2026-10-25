@@ -1,0 +1,45 @@
+---
+config:
+  flowchart:
+    curve: linear
+---
+graph TD;
+	__start__([<p>__start__</p>]):::first
+	load_history(load_history)
+	find_issues(find_issues)
+	check_mood(check_mood)
+	plan_work(plan_work)
+	order_specialist(order_specialist)
+	refund_specialist(refund_specialist)
+	faq_specialist(faq_specialist)
+	product_specialist(product_specialist)
+	manager_approval(manager_approval)
+	write_reply(write_reply)
+	quality_check(quality_check)
+	rewrite_reply(rewrite_reply)
+	save_history(save_history)
+	__end__([<p>__end__</p>]):::last
+	__start__ --> check_mood;
+	__start__ --> find_issues;
+	__start__ --> load_history;
+	check_mood --> plan_work;
+	faq_specialist --> manager_approval;
+	find_issues --> plan_work;
+	load_history --> plan_work;
+	manager_approval --> write_reply;
+	order_specialist --> manager_approval;
+	plan_work -.-> faq_specialist;
+	plan_work -.-> order_specialist;
+	plan_work -.-> product_specialist;
+	plan_work -.-> refund_specialist;
+	plan_work -.-> write_reply;
+	product_specialist --> manager_approval;
+	quality_check -.-> rewrite_reply;
+	quality_check -.-> save_history;
+	refund_specialist --> manager_approval;
+	rewrite_reply --> quality_check;
+	write_reply --> quality_check;
+	save_history --> __end__;
+	classDef default fill:#f2f0ff,line-height:1.2
+	classDef first fill-opacity:0
+	classDef last fill:#bfb6fc
